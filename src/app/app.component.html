@@ -1,0 +1,19 @@
+<!-- <h2>Angular Services</h2>
+<app-employees></app-employees>
+<app-employeesdeatils></app-employeesdeatils> -->
+
+
+<table border="1" *ngIf="!null">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>avatar</th>
+  </tr>
+  <tr *ngFor="let user of users;">
+  <td>{{user.id}}</td>
+  <td>{{user.first_name+""+user.last_name}}</td>
+  <td>{{user.email}}</td>
+  <td><img src='{{user.avatar}}' style="height: 50px;"/></td>
+</tr>
+</table>
